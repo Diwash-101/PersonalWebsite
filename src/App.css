@@ -1,0 +1,27 @@
+* {
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+  background-color: #282828;
+}
+.App {
+  justify-content: center;
+  color: #928374;
+
+  padding-top: 10%;
+  padding-left: 10%;
+}
+.footer {
+  bottom: 0;
+  text-align: center;
+  position: absolute;
+  width: 100%;
+}
+ion-icon {
+  color: #a89984;
+  font-size: 25px;
+  margin: 15px;
+}
+ion-icon:hover {
+  color: #359512;
+}

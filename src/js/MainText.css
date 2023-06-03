@@ -1,0 +1,15 @@
+.ltext {
+  font-size: 20px;
+  padding-top: 3px;
+}
+.description {
+  font-size: 30px;
+  font-weight: bold;
+  color: #359512;
+  background-color: #282828;
+  display: inline;
+}
+p {
+  margin: 0;
+  display: inline;
+}
