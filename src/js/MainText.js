@@ -10,8 +10,8 @@ const Typewriter = ({ texts }) => {
     const interval = setInterval(() => {
       if (currentText === texts[currentIndex]) {
         // If the current text is complete, start deleting
+        // TODO: Implement a delay here
         setIsDeleting(true);
-        const sleep = setInterval((r) => r, 5000);
       } else if (currentText.length === 0 && isDeleting) {
         // If the current text is fully deleted and the deletion is in progress,
         // move to the next text and stop deleting
@@ -39,7 +39,7 @@ const Typewriter = ({ texts }) => {
     return () => {
       clearInterval(interval);
     };
-  }, [currentText, currentIndex, isDeleting]);
+  }, [currentText, currentIndex, isDeleting, texts]);
 
   return <div className="description">{currentText}.</div>;
 };
