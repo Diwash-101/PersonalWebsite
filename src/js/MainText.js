@@ -5,12 +5,14 @@ const Typewriter = ({ texts }) => {
   const [currentText, setCurrentText] = useState(texts[0][0]);
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isDeleting, setIsDeleting] = useState(false);
+  const [sleepTime, setSleepTime] = useState(100);
 
   useEffect(() => {
     const interval = setInterval(() => {
       if (currentText === texts[currentIndex]) {
         // If the current text is complete, start deleting
         // TODO: Implement a delay here
+        setSleepTime(500);
         setIsDeleting(true);
       } else if (currentText.length === 0 && isDeleting) {
         // If the current text is fully deleted and the deletion is in progress,
@@ -21,6 +23,7 @@ const Typewriter = ({ texts }) => {
 
       if (isDeleting) {
         // Delete the next character from the current text
+        setSleepTime(100);
         const newText = texts[currentIndex].substring(
           0,
           currentText.length - 1
@@ -34,7 +37,7 @@ const Typewriter = ({ texts }) => {
         );
         setCurrentText(newText);
       }
-    }, 100); // Typing speed
+    }, sleepTime); // Typing speed
 
     return () => {
       clearInterval(interval);
