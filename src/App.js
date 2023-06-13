@@ -5,6 +5,10 @@ function App() {
   return (
     <div>
       <div className="App">
+        <div className="maindisc">
+          <div className="profilepic"></div>
+          <p className="maindescription">Diwash Dahal </p>
+        </div>
         <MainText />
       </div>
       <div className="footer">

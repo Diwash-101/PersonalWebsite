@@ -48,17 +48,11 @@ const Typewriter = ({ texts }) => {
 };
 
 function MainText() {
-  const texts = [
-    "Student",
-    "Developer",
-    "TechInthusiast",
-    "Photographer",
-    "Gamer",
-  ];
+  const texts = ["Student", "TechInthusiast", "Photographer", "Gamer"];
   return (
     <p className="ltext">
-      My name is <p className="description">Diwash Dahal </p>
-      and I am a <Typewriter texts={texts} />
+      I am a <p className="description">Developer </p>
+      by day and by night I am a <Typewriter texts={texts} />
     </p>
   );
 }

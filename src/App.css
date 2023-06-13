@@ -25,3 +25,23 @@ ion-icon {
 ion-icon:hover {
   color: #b8bb26;
 }
+
+.profilepic {
+  width: 70px;
+  height: 70px;
+  border-radius: 35px;
+  background-image: url("../public/profilepic.jpg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+.maindisc {
+  display: flex;
+}
+.maindescription {
+  font-size: 50px;
+  font-weight: bold;
+  color: #b8bb26;
+  background-color: #282828;
+  display: inline;
+  margin-left: 20px;
+}
