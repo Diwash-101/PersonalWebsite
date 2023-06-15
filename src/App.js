@@ -1,5 +1,5 @@
 import "./App.css";
-import MainText from "./js/Typewriter.js";
+import MainText from "./js/MainText.js";
 
 function App() {
   return (

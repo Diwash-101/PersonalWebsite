@@ -1,0 +1,12 @@
+.description {
+  font-size: 30px;
+  font-weight: bold;
+  color: var(--bright_green);
+  background-color: #282828;
+  display: inline;
+  font-size: calc(min(20vw, 60vh) / 12);
+}
+p {
+  margin: 0;
+  display: inline;
+}

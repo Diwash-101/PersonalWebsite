@@ -47,7 +47,7 @@
 }
 .App {
   justify-content: center;
-  color: var(--grey);
+  color: var(--light4_256);
   display: grid;
   grid-template-columns: 20vw 20vw 40vw 20vw;
   grid-template-rows: 20vh 60vh 20vh;
@@ -66,7 +66,7 @@
   justify-content: center;
 }
 .ltext {
-  font-size: 25px;
+  font-size: calc(min(20vw, 60vh) / 15);
   padding-top: 3px;
 }
 .footer {
@@ -74,7 +74,7 @@
 }
 ion-icon {
   color: var(--faded_blue);
-  font-size: calc(max(20vw, 60vh) / 12);
+  font-size: calc(min(20vw, 60vh) / 12);
   margin-right: 10px;
   bottom: 0%;
 }
@@ -99,7 +99,7 @@ ion-icon:hover {
   display: flex;
 }
 .name {
-  font-size: calc(max(20vw, 60vh) / 6);
+  font-size: calc(min(20vw, 60vh) / 6);
   font-weight: bold;
   color: var(--faded_orange);
 }
