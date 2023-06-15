@@ -105,13 +105,33 @@ ion-icon:hover {
 }
 @media only screen and (max-width: 600px) {
   .App {
-    grid-template-rows: 20vw 20vw 40vw 20vw;
-    grid-template-columns: 20vh 60vh 20vh;
+    grid-template-rows: 20vh 20vh 40vh 20vh;
+    grid-template-columns: 20vw 60vw 20vw;
   }
   .content {
-    grid-column-start: 2;
-    grid-column-end: 2;
     grid-row-start: 3;
     grid-row-end: 3;
+    grid-column-start: 2;
+    grid-column-end: 2;
+    margin-left: 0px;
+    margin-top: 20px;
+    height: min(20vh, 60vw);
+    align-items: center;
+  }
+  .profilepic {
+    width: min(20vh, 60vw);
+    height: min(20vh, 60vw);
+    border-radius: calc(min(20vh, 60vw) / 2);
+    align-self: center;
+    justify-self: center;
+  }
+  .name {
+    font-size: calc(min(20vh, 60vw) / 4);
+  }
+  ion-icon {
+    font-size: calc(min(20vh, 60vw) / 6);
+  }
+  .ltext {
+    font-size: calc(min(20vh, 60vw) / 9);
   }
 }

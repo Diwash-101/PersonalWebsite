@@ -10,3 +10,8 @@ p {
   margin: 0;
   display: inline;
 }
+@media only screen and (max-width: 600px) {
+  .description {
+    font-size: calc(min(20vw, 60vh) / 4);
+  }
+}
