@@ -117,6 +117,7 @@ ion-icon:hover {
     margin-top: 20px;
     height: min(20vh, 60vw);
     align-items: center;
+    padding: 5px;
   }
   .profilepic {
     width: min(20vh, 60vw);
@@ -126,12 +127,13 @@ ion-icon:hover {
     justify-self: center;
   }
   .name {
-    font-size: calc(min(20vh, 60vw) / 4);
+    font-size: calc(min(20vw, 60vh) / 4);
+    overflow: hidden;
   }
   ion-icon {
-    font-size: calc(min(20vh, 60vw) / 6);
+    font-size: calc(min(20vw, 60vh) / 6);
   }
   .ltext {
-    font-size: calc(min(20vh, 60vw) / 9);
+    font-size: calc(min(20vw, 60vh) / 9);
   }
 }
