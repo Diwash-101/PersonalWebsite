@@ -103,3 +103,15 @@ ion-icon:hover {
   font-weight: bold;
   color: var(--faded_orange);
 }
+@media only screen and (max-width: 600px) {
+  .App {
+    grid-template-rows: 20vw 20vw 40vw 20vw;
+    grid-template-columns: 20vh 60vh 20vh;
+  }
+  .content {
+    grid-column-start: 2;
+    grid-column-end: 2;
+    grid-row-start: 3;
+    grid-row-end: 3;
+  }
+}
