@@ -114,7 +114,7 @@ ion-icon:hover {
     grid-column-start: 2;
     grid-column-end: 2;
     margin-left: 0px;
-    margin-top: 20px;
+    margin-top: 5px;
     height: min(20vh, 60vw);
     align-items: center;
     padding: 5px;
