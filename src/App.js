@@ -17,7 +17,7 @@ function App() {
         <MainText />
         <div className="footer">
           <a
-            href="https://www.instagram.com/d_boss_101_/"
+            href="https://www.instagram.com/d_llusions/"
             target="_blank"
             rel="noopener noreferrer"
           >
