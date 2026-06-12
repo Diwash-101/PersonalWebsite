@@ -1,4 +1,6 @@
 import "./App.css";
+import { IconContext } from "react-icons";
+import { BsSubstack, BsGithub, BsInstagram } from "react-icons/bs";
 import MainText from "./js/MainText.js";
 
 function App() {
@@ -21,14 +23,27 @@ function App() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <ion-icon name="logo-instagram"></ion-icon>
+            {/* <ion-icon name="logo-instagram"></ion-icon> */}
+            <BsInstagram className="icon" />
           </a>
           <a
             href="https://github.com/Diwash-101"
             target="_blank"
             rel="noopener noreferrer"
           >
-            <ion-icon name="logo-github"></ion-icon>
+            {/* <ion-icon name="logo-github"></ion-icon> */}
+            <IconContext.Provider value={{ classname: "icon" }}>
+              <BsGithub className="icon" />
+            </IconContext.Provider>
+          </a>
+          <a
+            href="https://dahaldiwash.substack.com/profile"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <IconContext.Provider value={{ classname: "icon" }}>
+              <BsSubstack className="icon" />
+            </IconContext.Provider>
           </a>
         </div>
       </div>

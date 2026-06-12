@@ -72,13 +72,13 @@
 .footer {
   left: 0;
 }
-ion-icon {
+.icon {
   color: var(--faded_blue);
   font-size: calc(min(20vw, 60vh) / 12);
   margin-right: 10px;
   bottom: 0%;
 }
-ion-icon:hover {
+.icon:hover {
   color: var(--faded_green);
 }
 
@@ -130,7 +130,7 @@ ion-icon:hover {
     font-size: calc(min(20vw, 60vh) / 4);
     overflow: hidden;
   }
-  ion-icon {
+  .icon {
     font-size: calc(min(20vw, 60vh) / 6);
   }
   .ltext {
